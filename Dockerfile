@@ -3,5 +3,5 @@ WORKDIR /app
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
+COPY --from=base /app .
 ENTRYPOINT ["dotnet", "--help"]
