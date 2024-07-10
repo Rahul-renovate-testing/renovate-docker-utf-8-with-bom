@@ -11,4 +11,4 @@ Renovate should correctly intepret Dockerfile with UTF-8 with BOM encoding, like
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+[Renovate issue](https://github.com/renovatebot/renovate/discussions/30112).
