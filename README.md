@@ -2,7 +2,7 @@
 
 ## Current behavior
 
-If the Dockerfile uses UTF-8 with BOM encoding, and the very first line of the Dockerfile is like "FROM <image> as <aliasY", the dependency is not resolved.
+If the Dockerfile uses UTF-8 with BOM encoding, and the very first line of the Dockerfile is like "FROM <image> as <alias>", the dependency is not resolved.
 Instead, Renovate tries to resolve `<alias>` as Docker image from Docker hub.
 
 ## Expected behavior
