@@ -3,5 +3,4 @@ WORKDIR /app
 
 FROM gcc as final
 WORKDIR /app
-COPY --from=gcc /app .
 ENTRYPOINT ["dotnet", "--help"]
