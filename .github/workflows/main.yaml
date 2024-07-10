@@ -10,4 +10,15 @@ jobs:
         uses: renovatebot/github-action@v40.2.2
         with:
           token: ${{ secrets.RENOVATE_TOKEN }}
-          repository: antispam2002/renovate-docker-utf-8-with-bom            
+        env:
+          # Repository taken from variable to keep configuration file generic
+          RENOVATE_REPOSITORIES: ${{ github.repository }}
+          # Onboarding not needed for self hosted
+          RENOVATE_ONBOARDING: "false"
+          # Username for GitHub authentication (should match GitHub App name + [bot])
+          RENOVATE_USERNAME: "renovate[bot]"
+          # Git commit author used, must match GitHub App
+          RENOVATE_GIT_AUTHOR: "renovate <renovate[bot]@users.noreply.github.com>"
+          # Use GitHub API to create commits (this allows for signed commits from GitHub App)
+          RENOVATE_PLATFORM_COMMIT: "true"
+          LOG_LEVEL: "debug"
