@@ -4,6 +4,7 @@ on:
 jobs:
   renovate:
     runs-on: ubuntu-latest
+    environment: Renovate
     steps:
       - name: Renovate Bot GitHub Action
         uses: renovatebot/github-action@v40.2.2
