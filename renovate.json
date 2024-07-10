@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    ":dependencyDashboard",
+    ":ignoreModulesAndTests",
+    ":prHourlyLimit2",
+    ":prConcurrentLimit10",
+    ":pinVersions",
+    ":pinDependencies",
+    ":pinDevDependencies",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)",
+    ":automergeRequireAllStatusChecks",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all",
+    ":preserveSemverRanges"
+  ]
+}
