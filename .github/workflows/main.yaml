@@ -10,4 +10,4 @@ jobs:
         uses: renovatebot/github-action@v40.2.2
         with:
           token: ${{ secrets.RENOVATE_TOKEN }}
-            
+          repository: antispam2002/renovate-docker-utf-8-with-bom            
